@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+{% block content %}
+    <h2>Edit This User</h2>
+    <form method="POST" action="/users/{{user.id}}/edit-user">
+        <input type="text" placeholder="{{user.first_name}}" name="first">
+        <input type="text" placeholder="{{user.last_name}}" name="last">
+        <input type="text" placeholder="Enter an IMG URL" name="img_url">
+        <button>Add User</button>
+    </form>
+{% endblock %}
